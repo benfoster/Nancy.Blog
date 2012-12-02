@@ -1,0 +1,12 @@
+﻿@Master['Layout']
+
+@Section['Content']
+
+<h2>Latest Posts</h2>
+<ul>
+    @Each
+        <li><a href="/posts/@Current.Slug">@Current.Title</a> - <em>Posted @Current.PublishDate</em></li>
+    @EndEach
+</ul>
+
+@EndSection
